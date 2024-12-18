@@ -1,3 +1,6 @@
 [submodule "oficiales-unidades-ms"]
 	path = oficiales-unidades-ms
+	url = https://github.com/RomanoNinag/mod-oficiales-unidades-ms.git
+[submodule "client-gateway"]
+	path = client-gateway
 	url = https://github.com/RomanoNinag/client-gateway-SCAEP.git
