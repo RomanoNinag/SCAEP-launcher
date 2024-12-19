@@ -3,14 +3,6 @@ version: '3'
 
 services:
 
-  # rabbitmq:
-  #   image: rabbitmq:3-management
-  #   restart: always
-  #   ports:
-  #     - "5672:5672"
-  #     - "15672:15672"
-  #   container_name: cont_rabbitmq
-
   client-gateway:
     build: ./client-gateway
     ports:
@@ -31,10 +23,22 @@ services:
       - DATABASE_URL=${DATABASE_URL}
     depends_on:
       - arm_of_mod_db
+# # DATABASE OF_MOD_MS
+#   arm_of_mod_db:
+#     image: postgres:17
+#     restart: always
+#     ports:
+#       - "5432:5432"
+#     environment:
+#       POSTGRES_PASSWORD: ${DB_PASSWORD}
+#       POSTGRES_DB: ${OFMOD_DB_NAME}
+#     container_name: cont_db_armamento
+#     volumes:
+#       - ./oficiales-unidades-ms/postgres:/var/lib/postgresql/data
 # DATABASE OF_MOD_MS
   arm_of_mod_db:
-    image: postgres:17.2
-    restart: always
+    image: postgres:17
+    restart: unless-stopped
     ports:
       - "5432:5432"
     environment:
