@@ -7,3 +7,6 @@
 [submodule "arm-equip-ms"]
 	path = arm-equip-ms
 	url = https://github.com/RomanoNinag/mod_reg_equipos.git
+[submodule "trazabilidad-ms"]
+	path = trazabilidad-ms
+	url = https://github.com/RomanoNinag/trazabilidad-ms.git
