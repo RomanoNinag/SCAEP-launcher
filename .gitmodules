@@ -4,3 +4,6 @@
 [submodule "client-gateway"]
 	path = client-gateway
 	url = https://github.com/RomanoNinag/client-gateway-SCAEP.git
+[submodule "arm-equip-ms"]
+	path = arm-equip-ms
+	url = https://github.com/RomanoNinag/mod_reg_equipos.git
